@@ -1,0 +1,41 @@
+{
+  "name": "de_audio_client",
+  "private": true,
+  "version": "0.0.5",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build && electron-builder",
+    "buildwin": "vue-tsc && vite build && electron-builder --win",
+    "preview": "vite preview",
+    "buildAll": "vue-tsc && vite build && electron-builder --win && electron-builder --mac"
+  },
+  "entitlements": "entitlements.mac.plist",
+  "hardenedRuntime": true,
+  "extendInfo": {
+    "NSMicrophoneUsageDescription": "请允许本程序访问您的麦克风",
+    "NSCameraUsageDescription": "请允许本程序访问您的摄像头"
+  },
+  "dependencies": {
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vue": "^3.2.47",
+    "pinia": "^2.0.34",
+    "pinia-plugin-persistedstate": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "electron": "^24.4.0",
+    "electron-builder": "^23.6.0",
+    "naive-ui": "^2.34.4",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.0.2",
+    "vfonts": "^0.0.3",
+    "vite": "^4.3.2",
+    "vite-plugin-electron": "^0.11.2",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vue-tsc": "^1.4.2"
+  },
+  "main": "dist-electron/main.js"
+}
