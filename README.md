@@ -1,3 +1,5 @@
 # DeAudio_Client
 
-随便写的基于Electron实现的DeAudio FSD客户端
+随便写的基于 Electron 实现的 DeAudio FSD 客户端
+
+[服务端仓库](https://github.com/IIYBICT/DeAudio_Server)
